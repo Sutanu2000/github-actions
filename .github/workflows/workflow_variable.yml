@@ -1,0 +1,19 @@
+name: Testing Workflow Variables
+
+on:
+    push:
+
+env:
+    NAME: "Sutanu"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Set up variables
+              run: |
+                echo "Hello, $NAME!"
+
+
+
+
